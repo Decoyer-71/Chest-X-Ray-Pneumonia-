@@ -34,9 +34,9 @@
         - data폴더 -> env_list.txt
         - Google colab(fitting 용)
         
-## 계층별 / 파라미터별 실험(Goole colab)
+## 3. 비교 실험(Goole colab)
 ### 1) 계층 비교
-### ※ 공통조건
+#### ※ 공통조건
     - Filter : 64, 128
     - Hidden layer : 2개 (node : 128)
     - Dropout : 0.3
