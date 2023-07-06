@@ -34,7 +34,9 @@
     1) 목표 
         - Testing 결과 acc 0.90 이상 정확도 모델 생성
         - 계층별, 파라미터별 차이 성능비교
+        
     2) 소스명 : data 폴더 -> .ipynb
+    
     3) 개발환경 
         - data폴더 -> env_list.txt
         - Google colab(fitting 용)
