@@ -41,6 +41,7 @@
     - Hidden layer : 2개 (node : 128)
     - Dropout : 0.3
     - Learning rate : 0.0001
+
             
         (1) C - C - P - C - C - P - F - D - D
             가. Evaluate 결과 : loss: 0.2221 - accuracy: 0.9471
