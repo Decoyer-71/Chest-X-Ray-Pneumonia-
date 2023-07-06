@@ -49,7 +49,6 @@
     - Dropout : 0.3
     - Learning rate : 0.0001
     - Padding : same
-
             
 #### (1) C - C - P - C - C - P - F - D - D
         가. Evaluate 결과 : loss: 0.2221 - accuracy: 0.9471
@@ -94,7 +93,18 @@
 
 
 ### 2) 학습률 비교
-
+#### ※ 공통조건
+    - Filter : 64, 128
+    - Hidden layer : 2개 (node : 128)
+    - Dropout : 0.3
+    - Padding : same
+    - 계층 : C - P - C - F - D - D (가장 성능이 안좋은 5번모델로 학습률 변화에 따른 개선정도 확인)
+    
+#### (1) Learning rate : 0.001
+        가. Evaluate 결과 : 
+        나. 소요시간 : 
+        다. 평가 
+            - 
 
 
 ## 결론
