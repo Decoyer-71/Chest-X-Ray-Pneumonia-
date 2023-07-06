@@ -43,12 +43,12 @@
     - Learning rate : 0.0001
 
             
-        (1) C - C - P - C - C - P - F - D - D
-            가. Evaluate 결과 : loss: 0.2221 - accuracy: 0.9471
-            나. 소요시간 : 0:19:03
-            다. 평가 
-                - 초반 train 학습이 저조해 보이나 25회 반복을 넘어서면서 역전. 과적합 없음
-                - graph가 고르지 못해 학습률 하향 조정 필요
+#### (1) C - C - P - C - C - P - F - D - D
+        가. Evaluate 결과 : loss: 0.2221 - accuracy: 0.9471
+        나. 소요시간 : 0:19:03
+        다. 평가 
+            - 초반 train 학습이 저조해 보이나 25회 반복을 넘어서면서 역전. 과적합 없음
+            - graph가 고르지 못해 학습률 하향 조정 필요
 ![image](https://github.com/Decoyer-71/Chest-X-Ray-Pneumonia-/assets/127948197/f90f0381-5666-418f-abe1-67fd6cf94ed6)
 
 
