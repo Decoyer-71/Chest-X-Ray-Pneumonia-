@@ -25,14 +25,13 @@
           · NORMAL 폴더 : 8개
           · PNEUMONIA 폴더 : 8개
         - Label : NORMAL, PNEUMONIA
-
-## [Image Sample]
-![image](https://github.com/Decoyer-71/Chest-X-Ray-Pneumonia-/assets/127948197/486f53c9-6c45-4e8e-b907-40d0b596cefe)
-
-        
+       
     3) 특징 
         - Train, Test, val폴더로 구성되어 이용이 편리
         - But, validation용도의 Data가 적기에 조정해서 사용할 필요가 있음
+
+## [Image Sample]
+![image](https://github.com/Decoyer-71/Chest-X-Ray-Pneumonia-/assets/127948197/486f53c9-6c45-4e8e-b907-40d0b596cefe)
 
 ## 2. 프로젝트 개요
     1) 목표 
