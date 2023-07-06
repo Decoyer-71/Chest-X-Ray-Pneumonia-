@@ -13,6 +13,7 @@
 
 ## 1. Data Set
     1) 출처 : [Kaggle Chest X-Ray Images (Pneumonia)](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
+    
     2) 구성
         - Test 폴더 
           · NORMAL 폴더 : 234개
@@ -24,6 +25,10 @@
           · NORMAL 폴더 : 8개
           · PNEUMONIA 폴더 : 8개
         - Label : NORMAL, PNEUMONIA
+        
+    3) 특징 
+        - Train, Test, val폴더로 구성되어 이용이 편리
+        - But, validation용도의 Data가 적기에 조정해서 사용할 필요가 있음
 
 ## 2. 프로젝트 개요
     1) 목표 
@@ -41,6 +46,7 @@
     - Hidden layer : 2개 (node : 128)
     - Dropout : 0.3
     - Learning rate : 0.0001
+    - Padding : same
 
             
 #### (1) C - C - P - C - C - P - F - D - D
@@ -64,9 +70,28 @@
         가. Evaluate 결과 : loss: 0.1457 - accuracy: 0.9522
         나. 소요시간 : 0:11:25
         다. 평가 
-            - 과적합 없이 90% 넘는 성능을 보이나, Graph형태로 보아서 학습률 하양조정 필요
+            - 과적합 없이 90% 넘는 성능을 보이나, Graph형태로 보아서 학습률 하향 조정 필요
             - (1)번 설정과 동일한 Parameter를 보유하였으나 소요시간이 더 적음, C-P-C 와 C-C-P 계층을 비교해 재검증 필요
 ![image](https://github.com/Decoyer-71/Chest-X-Ray-Pneumonia-/assets/127948197/ba7fabf0-3252-4200-a766-d893869f5f68)
+
+#### (4) C - C - P - F - D - D
+        가. Evaluate 결과 : loss: 0.2288 - accuracy: 0.9377
+        나. 소요시간 : 0:12:23
+        다. 평가 
+            - accuracy 90이상의 준수한 학습력을 보여주었으나, 학습률 하향 조정 필요
+![image](https://github.com/Decoyer-71/Chest-X-Ray-Pneumonia-/assets/127948197/1bd4618a-dd4c-4c69-a52a-0b2ee9e5f937)
+
+#### (5) C - P - C - F - D - D
+        가. Evaluate 결과 : loss: 0.3762 - accuracy: 0.8925
+        나. 소요시간 : 0:09:25
+        다. 평가 
+            - (4)번 설정 시 소요시간이 더 많은것으로 보아, 연속적인 Conv layer의 연산이 더 높은 성능을 요구하는 것으로 판단      
+            - 또한 (4)번과 비교 시 상대적인 성능저하를 보여 특징맵을 1번 추출보다 연속 2번 추출하는 것이 학습률에 더 도움이 되는것으로 판단
+![image](https://github.com/Decoyer-71/Chest-X-Ray-Pneumonia-/assets/127948197/48e75a8d-8a98-44dd-9539-0941cc212531)
+
+
+
+### 2) 학습률 비교
 
 
 
