@@ -82,19 +82,21 @@
 ![image](https://github.com/Decoyer-71/Chest-X-Ray-Pneumonia-/assets/127948197/ba7fabf0-3252-4200-a766-d893869f5f68)
 
 #### (4) C - C - P - F - D - D
-        가. Evaluate 결과 : loss: 0.2288 - accuracy: 0.9377
-        나. 소요시간 : 0:12:23
+        가. Evaluate 결과 : loss: 0.1990 - accuracy: 0.9505
+        나. 소요시간 : 0:13:53
         다. 평가 
-            - accuracy 90이상의 준수한 학습력을 보여주었으나, 학습률 하향 조정 필요
-![image](https://github.com/Decoyer-71/Chest-X-Ray-Pneumonia-/assets/127948197/1bd4618a-dd4c-4c69-a52a-0b2ee9e5f937)
+            - 목표한 성능을 보이나, 과적합이 심함.
+![image](https://github.com/Decoyer-71/Chest-X-Ray-Pneumonia-/assets/127948197/7a82ba84-6e4f-443d-b936-7d47daf9e5b5)
+
+
 
 #### (5) C - P - C - F - D - D
-        가. Evaluate 결과 : loss: 0.3762 - accuracy: 0.8925
-        나. 소요시간 : 0:09:25
+        가. Evaluate 결과 : loss: 0.1797 - accuracy: 0.9608
+        나. 소요시간 : 0:09:41
         다. 평가 
             - (4)번 설정 시 소요시간이 더 많은것으로 보아, 연속적인 Conv layer의 연산이 더 높은 성능을 요구하는 것으로 판단      
             - 또한 (4)번과 비교 시 상대적인 성능저하를 보여 특징맵을 1번 추출보다 연속 2번 추출하는 것이 학습률에 더 도움이 되는것으로 판단
-![image](https://github.com/Decoyer-71/Chest-X-Ray-Pneumonia-/assets/127948197/48e75a8d-8a98-44dd-9539-0941cc212531)
+![image](https://github.com/Decoyer-71/Chest-X-Ray-Pneumonia-/assets/127948197/245f18be-f654-494f-ba81-a1c78b6d28c8)
 
 
 
@@ -111,7 +113,7 @@
         가. Evaluate 결과 : loss: 0.4688 - accuracy: 0.9437
         나. 소요시간 : 0:09:25
         다. 평가 
-            - validation_loss 오히려 증가하고, 학습률 0.0001일때와 비교하여 과적합이 심하게 발생
+            - validation loss가 오히려 증가하고, 학습률 0.0001일때와 비교하여 과적합이 심하게 발생
             - 오차를 고려할 때, 학습률을 낮추어야함
 ![image](https://github.com/Decoyer-71/Chest-X-Ray-Pneumonia-/assets/127948197/20c800ef-566b-4761-ae4d-b71259852f42)
 
