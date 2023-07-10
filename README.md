@@ -67,7 +67,6 @@
             - validation loss가 감소하지 않음. 과적합이 심함
 ![image](https://github.com/Decoyer-71/Chest-X-Ray-Pneumonia-/assets/127948197/dc81395e-bafb-466a-90ed-216e0d9c0158)
 
-
 #### (2) C - P - C - P - C - P - C - P - F - D - D
         가. Evaluate 결과 : loss: 0.1313 - accuracy: 0.9522
         나. 소요시간 : 0:09:27
@@ -91,8 +90,6 @@
         다. 평가 
             - 목표한 성능을 보이나, 과적합이 심함.
 ![image](https://github.com/Decoyer-71/Chest-X-Ray-Pneumonia-/assets/127948197/7a82ba84-6e4f-443d-b936-7d47daf9e5b5)
-
-
 
 #### (5) C - P - C - F - D - D
         가. Evaluate 결과 : loss: 0.1797 - accuracy: 0.9608
@@ -139,11 +136,9 @@
 
 
 ## 결론
-### 1) 
-### 2) 
-### 3) 
-### 4) 
-### 5) 
+### 1) C - P - C - P - C - P - C - P - F - D - D 모델설계 시 좋은 성능을 달성하면서 가장 적은 소요시간을 가짐
+### 2) 계층 비교를 통해 동일한 Parameter를 보유하더라도, Conv layer와 Pooling layer의 순서에 따라서 성능이 달라지며, 특히 Conv layer를 연속하여 사용하는 경우 더 높은 성능을 요구하는 것으로 판단됨
+### 3) 학습률이 작을수록 과적합 해소(특히 validation loss)에 용이함을 확인
     
 
 
