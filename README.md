@@ -61,28 +61,28 @@
     - Padding : same
             
 #### (1) C - C - P - C - C - P - F - D - D
-        가. Evaluate 결과 : loss: 0.2221 - accuracy: 0.9471
-        나. 소요시간 : 0:19:03
+        가. Evaluate 결과 : loss: 0.2419 - accuracy: 0.9633
+        나. 소요시간 : 0:20:15
         다. 평가 
-            - 초반 train 학습이 저조해 보이나 25회 반복을 넘어서면서 역전. 과적합 없음
-            - Graph가 고르지 못해 학습률 하향 조정 필요
-![image](https://github.com/Decoyer-71/Chest-X-Ray-Pneumonia-/assets/127948197/f90f0381-5666-418f-abe1-67fd6cf94ed6)
+            - validation loss가 감소하지 않음. 과적합이 심함
+![image](https://github.com/Decoyer-71/Chest-X-Ray-Pneumonia-/assets/127948197/dc81395e-bafb-466a-90ed-216e0d9c0158)
+
 
 #### (2) C - P - C - P - C - P - C - P - F - D - D
-        가. Evaluate 결과 : loss: 0.2400 - accuracy: 0.9104
-        나. 소요시간 : 0:09:24
+        가. Evaluate 결과 : loss: 0.1313 - accuracy: 0.9522
+        나. 소요시간 : 0:09:27
         다. 평가 
-            - (1)번 설정에 비해 학습이 완만하게 이루어지는 경향을 보임. Pooling이 2번 더 추가되면서 이미지 size가 축소하여 계산량이 줄어들었기 때문으로 판단
+            - 목표한 성능을 보이면서, 과적합이 거의 없음. Pooling이 2번 더 추가되면서 이미지 size가 축소하여 계산량이 줄어들었기 때문으로 판단
             - 계산량 차이로 인해 (1)계층에 비해 소요시간이 감소함
             - (1)번 설정과 동일한 pooling 계층을 보유 시 경향 확인이 필요
-![image](https://github.com/Decoyer-71/Chest-X-Ray-Pneumonia-/assets/127948197/fe54086b-2541-4793-9693-ce819e635cf9)
+![image](https://github.com/Decoyer-71/Chest-X-Ray-Pneumonia-/assets/127948197/5f8e44f0-1f05-4bb7-bd39-e6555b6f0a47)
 
 #### (3) C - P - C - P - C - C - F - D - D
-        가. Evaluate 결과 : loss: 0.1457 - accuracy: 0.9522
-        나. 소요시간 : 0:11:25
+        가. Evaluate 결과 : loss: 0.1447 - accuracy: 0.9556
+        나. 소요시간 : 0:10:42
         다. 평가 
-            - 과적합 없이 90% 넘는 성능을 보이나, Graph형태로 보아서 학습률 하향 조정 필요
-            - (1)번 설정과 동일한 Parameter를 보유하였으나 소요시간이 더 적음, C-P-C 와 C-C-P 계층을 비교해 재검증 필요
+            - 과적합이 다소 발생하나 (1)번 계층에 비해 과적합 수치가 낮음
+            - (1)번과 동일한 Parameter를 보유하였으나 소요시간이 더 적음, C-P-C 와 C-C-P 계층을 비교해 재검증 필요
 ![image](https://github.com/Decoyer-71/Chest-X-Ray-Pneumonia-/assets/127948197/ba7fabf0-3252-4200-a766-d893869f5f68)
 
 #### (4) C - C - P - F - D - D
