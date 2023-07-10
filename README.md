@@ -13,8 +13,8 @@
 <a href="https://pandas.pydata.org/" target="_blank"><img src="https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white"/></a>
 
 ## 폴더 분류
-[code](https://github.com/Decoyer-71/BrainTumor/tree/master/code) : 학습 및 모델생성 코드
-[data](https://github.com/Decoyer-71/BrainTumor/tree/master/code) : 개발환경 list, data
+[code](https://github.com/Decoyer-71/Chest-X-Ray-Pneumonia-/tree/master/code) : 학습 및 모델생성 코드
+[data](https://github.com/Decoyer-71/Chest-X-Ray-Pneumonia-/tree/master/data) : 개발환경 list, data
 
 
 ## 1. Data Set
