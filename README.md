@@ -6,7 +6,7 @@
 ## 사용언어
 <a href="https://www.python.org/" target="_blank"><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white"/></a>
 <a href="https://jupyter.org/" target="_blank"><img src="https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white"/></a>
-<a href="https://www.tensorflow.org/?hl=ko" target="_blank"><img src="https://img.shields.io/badge/tensorflow-FF6F00?style=flat&logo=tensorflow&logoColor=white"/></a>
+<a href="https://www.tensorflow.org/?hl=ko" target="_blank"><img src="https://img.shields.io/badge/Tensorflow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white"/></a>
 
 ## 폴더 분류
 [code](https://github.com/Decoyer-71/BrainTumor/tree/master/code) : 학습 및 모델생성 코드
@@ -120,6 +120,13 @@
             - 준수한 성능(정확도 90%이상)을 보이며, 과적합 문제도 해소
             - Graph 형태가 고르지 못한 문제
 ![image](https://github.com/Decoyer-71/Chest-X-Ray-Pneumonia-/assets/127948197/b69ec4d7-a148-46ce-82a5-335d5b4bb6d7)
+
+#### (3) Learning rate : 1e-6
+        가. Evaluate 결과 : loss: 0.1873 - accuracy: 0.9309
+        나. 소요시간 : 0:09:36
+        다. 평가 
+            - 과적합이 없고, (2)번에 비해 학습 Graph 모양이 고르게 안정적이다.
+![image](https://github.com/Decoyer-71/Chest-X-Ray-Pneumonia-/assets/127948197/cd41a404-77c5-44b0-9db0-4a132f07c4f7)
 
 
 
