@@ -6,6 +6,7 @@
 ## 사용언어
 <a href="https://www.python.org/" target="_blank"><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white"/></a>
 <a href="https://jupyter.org/" target="_blank"><img src="https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white"/></a>
+<a href="https://www.tensorflow.org/?hl=ko" target="_blank"><img src="https://img.shields.io/badge/tensorflow-FF6F00?style=flat&logo=tensorflow&logoColor=white"/></a>
 
 ## 폴더 분류
 [code](https://github.com/Decoyer-71/BrainTumor/tree/master/code) : 학습 및 모델생성 코드
@@ -98,11 +99,11 @@
 ### 2) 학습률 비교
 #### ※ 공통조건
     - 계층비교 5번 모델로 학습률 비교
-        - Filter : 64, 128
-        - Hidden layer : 2개 (node : 128)
-        - Dropout : 0.3
-        - Padding : same
-        - 계층 : C - P - C - F - D - D ()
+        · Filter : 64, 128
+        · Hidden layer : 2개 (node : 128)
+        · Dropout : 0.3
+        · Padding : same
+        · 계층 : C - P - C - F - D - D ()
     
 #### (1) Learning rate : 0.001
         가. Evaluate 결과 : loss: 0.4688 - accuracy: 0.9437
@@ -111,6 +112,15 @@
             - validation_loss 오히려 증가하고, 학습률 0.0001일때와 비교하여 과적합이 심하게 발생
             - 오차를 고려할 때, 학습률을 낮추어야함
 ![image](https://github.com/Decoyer-71/Chest-X-Ray-Pneumonia-/assets/127948197/20c800ef-566b-4761-ae4d-b71259852f42)
+
+#### (2) Learning rate : 1e-5
+        가. Evaluate 결과 : loss: 0.1216 - accuracy: 0.9548
+        나. 소요시간 : 0:09:36
+        다. 평가 
+            - 준수한 성능(정확도 90%이상)을 보이며, 과적합 문제도 해소
+            - Graph 형태가 고르지 못한 문제
+![image](https://github.com/Decoyer-71/Chest-X-Ray-Pneumonia-/assets/127948197/b69ec4d7-a148-46ce-82a5-335d5b4bb6d7)
+
 
 
 ## 결론
